@@ -1,40 +1,40 @@
-# #!usr/bin/env python3
-# # -*- coding: utf-8 -*-
-# abs(100)
-# abs(-5)
-# max(2,3,1,-5)
-# int('123')
-# int(12.34)
-# float('1.23')
-# float(1)
-# str(1.23)
-# str(100)
-# bool(1)
-# bool('')
-# # res = hex(int(input('please enter a number:')))
-# def my_abs(x):
-#     if x >= 0:
-#         return x
-#     else:
-#         return -x
-# print(my_abs(-99))
-# # from abstest import my_abs
-# # my_abs(9)
-# def abs(x):
-#     if not isinstance(x,(int,float)):
-#         raise TypeError('bad operand type')
-#     if x >= 0:
-#         return x
-#     else:
-#         return -x
-# import math
-# def move(x,y,step,angle=0):
-#     nx = x + step * math.cos(angle)
-#     ny = y - step * math.sin(angle)
-#     return nx, ny
-# x, y = move(100,100,60,math.pi/6)
-# print(x,y)
-#! usr/bin/env python3
+#!usr/bin/env python3
+# -*- coding: utf-8 -*-
+abs(100)
+abs(-5)
+max(2,3,1,-5)
+int('123')
+int(12.34)
+float('1.23')
+float(1)
+str(1.23)
+str(100)
+bool(1)
+bool('')
+# res = hex(int(input('please enter a number:')))
+def my_abs(x):
+    if x >= 0:
+        return x
+    else:
+        return -x
+print(my_abs(-99))
+# from abstest import my_abs
+# my_abs(9)
+def abs(x):
+    if not isinstance(x,(int,float)):
+        raise TypeError('bad operand type')
+    if x >= 0:
+        return x
+    else:
+        return -x
+import math
+def move(x,y,step,angle=0):
+    nx = x + step * math.cos(angle)
+    ny = y - step * math.sin(angle)
+    return nx, ny
+x, y = move(100,100,60,math.pi/6)
+print(x,y)
+# ! usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 from math import sqrt
@@ -68,4 +68,21 @@ def test():
             print(f'a={a},b={b},c={c},error={e}')
 
 test()
+def power(x,n=2):
+    s = 1
+    while n >0:
+        s =  s * x
+        n = n - 1
+    return s
 
+def enroll(name,gender):
+    print('name:',name)
+    print('gender:',gender)
+def add_end(l=[]):
+    l.append('END')
+    return l
+def add_end2(l=None):
+    if l is None:
+        l = []
+    l.append('END')
+    return l
