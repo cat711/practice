@@ -64,13 +64,13 @@
 # g = (x*x for x in range (10))
 # for i in g:
 #     print(i)
-# def fib(max):
-#     n,a,b = 0,0,1
-#     while n<max:
-#         yield b
-#         a,b = b,a+b
-#         n = n+1
-#     return 'done'
+def fib(max):
+    n,a,b = 0,0,1
+    while n<max:
+        yield b
+        a,b = b,a+b
+        n = n+1
+    return 'done'
 # g=fib(6)
 # while True:
 #     try:
@@ -79,6 +79,8 @@
 #     except StopIteration as e:
 #         print('Generator return value:',e.value)
 #         break
+
+#打印杨辉三角
 def triangles(n=10):
     cur_row = [1]
     row_count = 1
